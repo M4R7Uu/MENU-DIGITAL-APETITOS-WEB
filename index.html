@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apetitos - Menú Digital</title>
+    <!-- Tipografías: Arvo (Robusta) y Outfit (Moderna) -->
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sección de Presentación (Hero) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="brand-name">Apetitos</h1>
+            <p class="slogan">Restaurante · Cafetería | Cultura & Tradición</p>
+            
+            <!-- Grid de 3 Imágenes Horizontales (Mobile Stack) -->
+            <div class="hero-image-grid">
+                <div class="hero-img-wrapper">
+                    <img src="imagenesapetitoswebv2/cultura y tradicion.jpg" alt="Local Apetitos" class="hero-img">
+                </div>
+                <div class="hero-img-wrapper">
+                    <img src="imagenesapetitoswebv2/restaurante.jpg" alt="Bocachico Frito" class="hero-img">
+                </div>
+                <div class="hero-img-wrapper">
+                    <img src="imagenesapetitoswebv2/cultura y tradicon.jpg" alt="Fritos Típicos" class="hero-img">
+                </div>
+            </div>
+
+            <div class="welcome-text">
+                <p>Bienvenidos a lo mejor de <strong>La Apartada, Córdoba</strong>. Sabores auténticos que alegran tu día.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación por Categorías (Sticky) -->
+    <nav class="category-tabs">
+        <button class="tab-btn active" onclick="openCategory(event, 'desayunos')">🍳 Desayunos</button>
+        <button class="tab-btn" onclick="openCategory(event, 'almuerzos')">🥘 Almuerzos</button>
+        <button class="tab-btn" onclick="openCategory(event, 'especiales')">🎁 Especiales</button>
+    </nav>
+
+    <!-- Cuerpo del Menú Interactivo -->
+    <main class="menu-container">
+        
+        <!-- CATEGORÍA: DESAYUNOS Y FRITOS -->
+        <section id="desayunos" class="tab-content active">
+            <h2 class="category-title">🍳 Desayunos y Fritos</h2>
+            <div class="menu-grid">
+                <div class="menu-item"><span>Arroz de rostro</span> <span class="price">$8.000</span></div>
+                <div class="menu-item"><span>Arroz blanco</span> <span class="price">$2.000</span></div>
+                <div class="menu-item"><span>Calentado</span> <span class="price">$4.000</span></div>
+                <div class="menu-item"><span>Huevos revueltos</span> <span class="price">$4.000</span></div>
+                <div class="menu-item"><span>Huevos rancheros</span> <span class="price">$5.000</span></div>
+                <div class="menu-item"><span>Chicharrón</span> <span class="price">$7.000</span></div>
+                <div class="menu-item"><span>Carne mechada/molida</span> <span class="price">$7.000</span></div>
+                <div class="menu-item"><span>Asados</span> <span class="price">$7.000</span></div>
+                <div class="menu-item"><span>Ensalada habichuela/berenjena</span> <span class="price">$7.000</span></div>
+                <div class="menu-item"><span>Guarniciones</span> <span class="price">$3.000</span></div>
+            </div>
+
+            <h3 class="sub-category">🥟 Los Fritos de la Casa</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><span>Empanadas</span> <span class="price">$2.000</span></div>
+                <div class="menu-item"><span>Arepa de huevo</span> <span class="price">$3.500</span></div>
+                <div class="menu-item"><span>Arepa dulce</span> <span class="price">$2.500</span></div>
+                <div class="menu-item"><span>Papa rellena / Pastelito</span> <span class="price">$3.000</span></div>
+                <div class="menu-item"><span>Quibbes / Caramañola</span> <span class="price">$3.000</span></div>
+                <div class="menu-item"><span>Salchichón / Queso</span> <span class="price">$2.000</span></div>
+                <div class="menu-item"><span>Huevo cocido</span> <span class="price">$1.000</span></div>
+            </div>
+        </section>
+
+        <!-- CATEGORÍA: ALMUERZOS -->
+        <section id="almuerzos" class="tab-content">
+            <h2 class="category-title">🥘 Almuerzos (Bandejas)</h2>
+            <div class="menu-grid">
+                <div class="menu-item"><span>Asados/Molida/Esmechada</span> <span class="price">$14.000</span></div>
+                <div class="menu-item destaque">
+    <span>Bocachico Frito</span> 
+    <span class="price">$20.000</span>
+</div>
+
+<div class="menu-item destaque">
+    <span>Tilapia Roja</span> 
+    <span class="price">$30.000</span>
+</div>
+            </div>
+
+            <h3 class="sub-category">🍲 Almuerzos Completos (+ Sopa)</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><span>Asados/Molidas + Sopa</span> <span class="price">$18.000</span></div>
+                <div class="menu-item"><span>Bocachico + Sopa</span> <span class="price">$25.000</span></div>
+                <div class="menu-item"><span>Tilapia + Sopa</span> <span class="price">$35.000</span></div>
+            </div>
+        </section>
+
+        <!-- CATEGORÍA: ESPECIALES -->
+        <section id="especiales" class="tab-content">
+            <h2 class="category-title">🎁 Especiales y Extras</h2>
+            <div class="menu-grid">
+               <div class="menu-item destaque">
+    <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+        <span>Mote de Queso</span> 
+        <span class="price">$8.000</span>
+    </div>
+    <p class="desc">Tradición cordobesa en cada bocado.</p>
+</div>
+                <div class="menu-item"><span>Sopa de Costilla o Pollo</span> <span class="price">$7.000</span></div>
+                <div class="menu-item"><span>Porción Fríjoles / Lentejas</span> <span class="price">$7.000</span></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+   <footer>
+    <!-- Botón de Facebook Estético -->
+    <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100063483307590&mibextid=wwXIfr&rdid=oO0dvuiMSLGUIjJ0&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17ikuMkdVU%2F%3Fmibextid%3DwwXIfr#" 
+           class="fb-button" target="_blank">
+            <span class="fb-icon">f</span>
+            Síguenos en Facebook
+        </a>
+    </div>
+
+    <p class="footer-location">📍 La Apartada, Córdoba</p>
+
+    <p class="copyright">
+    Developed by 
+    <a href="https://m4r7uu.github.io/-IF-CODE-WEB/" class="ifcode-link" target="_blank" rel="noopener noreferrer">
+        <span class="if-orange">IF</span><span class="code-white">CODE</span>
+    </a>
+</p>
+</footer>
+
+    <!-- WhatsApp Floating Action Button -->
+   <!-- Botón de WhatsApp con Mensaje Automático -->
+<a href="https://wa.me/573106628739?text=Hola%20Apetitos!%20👋%20Vengo%20de%20ver%20el%20menú%20digital%20y%20me%20gustaría%20hacer%20un%20pedido." 
+   class="whatsapp-float" 
+   target="_blank">
+   <span class="wpp-icon">📲</span> Pide tu domicilio
+</a>
+
+    <script>
+        function openCategory(evt, categoryName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(categoryName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+            
+            // Scroll suave hacia arriba de la categoría
+            window.scrollTo({
+                top: document.querySelector('.category-tabs').offsetTop - 10, 
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
