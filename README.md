@@ -2,7 +2,7 @@
 
 Proyecto de menú digital optimizado para dispositivos móviles, diseñado para el restaurante **Apetitos** en La Apartada, Córdoba. 
 
-Desarrollado por **<IF>CODE**.
+Desarrollado por **IFCODE**.
 
 ## 🚀 Características
 - **Diseño Mobile-First:** Optimizado para una visualización rápida y clara en celulares.
@@ -23,7 +23,7 @@ El sitio utiliza una paleta de colores cálidos (`#fdd55c`, `#3e2723`) que refle
 ---
 
 ## 👨‍💻 Desarrollador
-Este proyecto es propiedad de **<IF>CODE**.  
+Este proyecto es propiedad de **IFCODE**.  
 🔗 [Visita mi Portafolio](https://m4r7uu.github.io/-IF-CODE-WEB/)
 
 ---
